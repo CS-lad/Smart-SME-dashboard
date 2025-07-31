@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Compliance</title>
+    <link href="dashboard.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--for easy navigations-->
+    <div class="sidebar">
+        <h1 class="S1"><img class="ss" src="logo.jpg"> SmartCompliance</h1>
+        <div class="nav-links">
+            <nav class="sections">
+                <ol>
+                    <li class="l1"><a href="#"><img class="db-logo" src="db.jpg"> Dashboard</a></li>
+                    <li class="l1"><a href="#"><img class="data-logo" src="up-data.jpg"> Upload Data</a></li>
+                    <li class="l1"><a href="#"><img class="report-logo" src="report-logo.jpg"> Reports</a></li>
+                    <li class="l1"><a href="#"><img class="setting-logo" src="setting-logo.jpg"> Settings</a></li>
+                    <li class="l1"><a href="login.html"><img class="logout-logo" src="logout-logo.jpg"> Logout</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="Topbar">
+        <h2 class="S2">👋 Welcome back, User!</h2>
+        <!--profile and notification bell-->
+        <div class="right">
+            <img class="notification" src="bell.jpg">
+            <svg width="35" height="35" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M84 42C84 18.804 65.196 0 42 0C18.804 0 0 18.804 0 42C0 65.196 18.804 84 42 84C65.196 84 84 65.196 84 42Z" fill="url(#paint0_linear_12_4)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0377 68.0702C22.699 60.2284 31.9176 55.125 42.3281 55.125C52.573 55.125 61.6635 60.0672 67.3457 67.6974C60.8283 74.1261 51.8775 78.0937 42.0001 78.0937C32.3147 78.0937 23.5204 74.279 17.0377 68.0702ZM56.4375 33.7969C56.4375 41.9517 50.1206 48.5625 42.3281 48.5625C34.5357 48.5625 28.2188 41.9517 28.2188 33.7969C28.2188 25.642 34.5357 19.0312 42.3281 19.0312C50.1206 19.0312 56.4375 25.642 56.4375 33.7969Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear_12_4" x1="42" y1="0" x2="42" y2="84" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#A5ABB7"/>
+            <stop offset="1" stop-color="#848B94"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+            <button class="profile">Sujal Aryal</button>
+        </div>
+    </div>
+
+    <!--main area with cards and transaction table-->
+    <div class="main area">
+        <h1 class="S3">Compliance overview</h1>
+        <div class="cards">
+            <div class="status">
+                <h3>Status</h3> 
+                <p class="P1">All Systems Compliant</p>
+            </div>
+
+            <div class="Alerts">
+                <h3>Alerts</h3>
+                <p class="P2">5 Suspicious Transactions</p>
+            </div>
+
+            <div class="Pending">
+                <h3>Pending</h3>
+                <p>2 Reports Awaiting Review</p>
+            </div>
+        </div>
+
+        <div class="recent-transactions">
+            <h2 class="S4">Recent Transactions</h2>
+            <button class="CSV">Upload CSV file</button>
+            <input type="file" id="csvFileInput" accept=".csv" style="display: none;" />
+            <p id="fileNameDisplay">No file uploaded</p>
+
+            <div class="column-headings">
+                <table class="details">
+                    <tr>
+                        <th class="id">ID</th>
+                        <th class="Transactions-date">Transactions Date</th>
+                        <th class="amount">Amount</th>
+                        <th class="status">Status</th>
+                        <th class="Remarks">Remarks</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
