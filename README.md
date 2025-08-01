@@ -34,7 +34,6 @@ Smart Compliance Dashboard is a SaaS web application aimed at helping small and 
 <img width="1437" height="778" alt="Screenshot 2025-07-30 at 8 10 46 PM" src="https://github.com/user-attachments/assets/8b400f6d-85a3-4a35-bbbc-83ef9f389c49" />
 <img width="1437" height="778" alt="Screenshot 2025-07-30 at 8 11 09 PM" src="https://github.com/user-attachments/assets/73c2a381-adc8-491f-9e53-c9840de03378" />
 <img width="1437" height="778" alt="Screenshot 2025-07-30 at 8 11 31 PM" src="https://github.com/user-attachments/assets/a8645f35-5fd1-4b8b-b8d4-82e02d337c73" />
-<img width="1437" height="778" alt="Screenshot 2025-07-31 at 6 20 37 PM" src="https://github.com/user-attachments/assets/cf988ad0-2956-4446-8058-95ad5ed00d14" />
 
 *there will be changes in the UI later on*
 
