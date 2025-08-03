@@ -26,7 +26,7 @@ function handleFileSelection(e) {
         fileNameDisplay.textContent = "no file selected";
     }
 
-    //reads the file
+    //reads the file and activating alert system
     const reader = new FileReader();
     reader.onload = () => {
         fileContentDisplay.textContent = reader.result.split;
@@ -35,6 +35,23 @@ function handleFileSelection(e) {
         csvDisplay.innerHTML = ""; // clear previous rows
 
         const rows = reader.result.split("\n").filter(row => row.trim() !== ""); // split & remove empty lines
+        const headers = rows[0].split(',');
+        const amountIndex = headers.indexOf("Amount"); //locating the amount column index
+        let suspiciousCount = 0;
+
+        //function to detect suspicious transactions
+        function detectSuspiciousTransaction(e) {
+            for(let i = 1; i < rows.length; i++){
+                const values = rows[i].split(',');
+                const amount = parseFloat(values[amountIndex]);
+                if (amount > 10000)
+                {
+                    suspiciousCount++;
+                }
+            }
+            document.getElementById('count').textContent = suspiciousCount; // updating the count on alert card 
+        }
+        detectSuspiciousTransaction(); // calling back the function
 
         for (let i = 1; i < rows.length; i++) { // skip header row
          const values = rows[i].split(",").map(val => val.trim()); // split & clean up values
@@ -60,3 +77,6 @@ function showMessage(message, type) {
     fileMessageDisplay.textContent = message;
     fileMessageDisplay.style.color = type === "error" ? "red" : "green";
 }
+
+
+
