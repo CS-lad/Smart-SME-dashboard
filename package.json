@@ -1,0 +1,27 @@
+{
+  "name": "sme_compliance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CS-lad/Smart-SME-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CS-lad/Smart-SME-dashboard/issues"
+  },
+  "homepage": "https://github.com/CS-lad/Smart-SME-dashboard#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
